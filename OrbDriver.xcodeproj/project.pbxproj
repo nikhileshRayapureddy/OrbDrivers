@@ -1,0 +1,950 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A70340151FDE95E700FC447C /* CurvedButtonUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = A70340141FDE95E700FC447C /* CurvedButtonUtility.swift */; };
+		A706C58A1FD2919A00D7C0F8 /* ServiceLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A706C5891FD2919A00D7C0F8 /* ServiceLayer.swift */; };
+		A706C58D1FD291E100D7C0F8 /* HttpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A706C58C1FD291E100D7C0F8 /* HttpRequest.swift */; };
+		A706C58F1FD2920900D7C0F8 /* UserBO.swift in Sources */ = {isa = PBXBuildFile; fileRef = A706C58E1FD2920900D7C0F8 /* UserBO.swift */; };
+		A70F52031FF38B9200015510 /* OfflineCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A70F52021FF38B9200015510 /* OfflineCustomView.swift */; };
+		A70F52051FF38B9E00015510 /* OfflineCustomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A70F52041FF38B9D00015510 /* OfflineCustomView.xib */; };
+		A70F52091FF3CAA100015510 /* TaksyKraft+GIF.swift in Sources */ = {isa = PBXBuildFile; fileRef = A70F52081FF3CAA100015510 /* TaksyKraft+GIF.swift */; };
+		A727966A1FEA33520052D291 /* DashBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A72796691FEA33520052D291 /* DashBoardViewController.swift */; };
+		A727966C1FEA35390052D291 /* OTPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A727966B1FEA35390052D291 /* OTPViewController.swift */; };
+		A727966E1FEA35480052D291 /* FeaturesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A727966D1FEA35480052D291 /* FeaturesViewController.swift */; };
+		A72796701FEA35640052D291 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A727966F1FEA35640052D291 /* LocationViewController.swift */; };
+		A72796731FEA4A210052D291 /* NotificationsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A72796721FEA4A210052D291 /* NotificationsTableViewCell.swift */; };
+		A72796751FEA4AAE0052D291 /* NotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A72796741FEA4AAE0052D291 /* NotificationsViewController.swift */; };
+		A72796771FEA569A0052D291 /* FriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A72796761FEA569A0052D291 /* FriendsViewController.swift */; };
+		A72796791FEA5BE30052D291 /* FriendsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A72796781FEA5BE30052D291 /* FriendsDetailViewController.swift */; };
+		A727967B1FEA765B0052D291 /* AddFriendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A727967A1FEA765B0052D291 /* AddFriendViewController.swift */; };
+		A727967D1FEA82960052D291 /* CabDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A727967C1FEA82960052D291 /* CabDetailsViewController.swift */; };
+		A7608F061FF65FD400621025 /* ProfileBO.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7608F051FF65FD400621025 /* ProfileBO.swift */; };
+		A7608F081FF663AD00621025 /* DriverActivityBO.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7608F071FF663AD00621025 /* DriverActivityBO.swift */; };
+		A76D0E731FD145C0001BD348 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A76D0E711FD145C0001BD348 /* Main.storyboard */; };
+		A76D0E761FD145C0001BD348 /* OrbDriver.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A76D0E741FD145C0001BD348 /* OrbDriver.xcdatamodeld */; };
+		A76D0E7B1FD145C0001BD348 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A76D0E791FD145C0001BD348 /* LaunchScreen.storyboard */; };
+		A76D0E861FD145C1001BD348 /* OrbDriverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76D0E851FD145C1001BD348 /* OrbDriverTests.swift */; };
+		A76D0E911FD145C1001BD348 /* OrbDriverUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76D0E901FD145C1001BD348 /* OrbDriverUITests.swift */; };
+		A76D0EE51FD1652C001BD348 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76D0EA61FD1652C001BD348 /* BaseViewController.swift */; };
+		A76D0EE61FD1652C001BD348 /* FRHyperLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = A76D0EA81FD1652C001BD348 /* FRHyperLabel.m */; };
+		A76D0EE71FD1652C001BD348 /* FloatLabelTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76D0EA91FD1652C001BD348 /* FloatLabelTextView.swift */; };
+		A76D0EE81FD1652C001BD348 /* FloatLabelTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76D0EAA1FD1652C001BD348 /* FloatLabelTextField.swift */; };
+		A76D0EE91FD1652C001BD348 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76D0EAB1FD1652C001BD348 /* Reachability.swift */; };
+		A76D0F041FD1652C001BD348 /* IQTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76D0ECB1FD1652C001BD348 /* IQTextView.swift */; };
+		A76D0F051FD1652C001BD348 /* IQPreviousNextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76D0ECD1FD1652C001BD348 /* IQPreviousNextView.swift */; };
+		A76D0F061FD1652C001BD348 /* IQTitleBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76D0ECE1FD1652C001BD348 /* IQTitleBarButtonItem.swift */; };
+		A76D0F071FD1652C001BD348 /* IQBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76D0ECF1FD1652C001BD348 /* IQBarButtonItem.swift */; };
+		A76D0F081FD1652C001BD348 /* IQToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76D0ED01FD1652C001BD348 /* IQToolbar.swift */; };
+		A76D0F091FD1652C001BD348 /* IQUIView+IQKeyboardToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76D0ED11FD1652C001BD348 /* IQUIView+IQKeyboardToolbar.swift */; };
+		A76D0F0A1FD1652C001BD348 /* IQKeyboardManagerConstantsInternal.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76D0ED31FD1652C001BD348 /* IQKeyboardManagerConstantsInternal.swift */; };
+		A76D0F0B1FD1652C001BD348 /* IQKeyboardManagerConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76D0ED41FD1652C001BD348 /* IQKeyboardManagerConstants.swift */; };
+		A76D0F0C1FD1652C001BD348 /* IQKeyboardManager.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A76D0ED61FD1652C001BD348 /* IQKeyboardManager.bundle */; };
+		A76D0F0D1FD1652C001BD348 /* IQKeyboardReturnKeyHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76D0ED71FD1652C001BD348 /* IQKeyboardReturnKeyHandler.swift */; };
+		A76D0F0E1FD1652C001BD348 /* IQKeyboardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76D0ED81FD1652C001BD348 /* IQKeyboardManager.swift */; };
+		A76D0F0F1FD1652C001BD348 /* IQUIWindow+Hierarchy.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76D0EDB1FD1652C001BD348 /* IQUIWindow+Hierarchy.swift */; };
+		A76D0F101FD1652C001BD348 /* IQUIScrollView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76D0EDC1FD1652C001BD348 /* IQUIScrollView+Additions.swift */; };
+		A76D0F111FD1652C001BD348 /* IQUIViewController+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76D0EDD1FD1652C001BD348 /* IQUIViewController+Additions.swift */; };
+		A76D0F121FD1652C001BD348 /* IQUITextFieldView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76D0EDE1FD1652C001BD348 /* IQUITextFieldView+Additions.swift */; };
+		A76D0F131FD1652C001BD348 /* IQUIView+Hierarchy.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76D0EDF1FD1652C001BD348 /* IQUIView+Hierarchy.swift */; };
+		A76D0F141FD1652C001BD348 /* IQNSArray+Sort.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76D0EE01FD1652C001BD348 /* IQNSArray+Sort.swift */; };
+		A76D0F151FD1652C001BD348 /* OrbUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76D0EE31FD1652C001BD348 /* OrbUserDefaults.swift */; };
+		A76D0F161FD1652C001BD348 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76D0EE41FD1652C001BD348 /* AppDelegate.swift */; };
+		A76D0F181FD182FB001BD348 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76D0F171FD182FB001BD348 /* ProfileViewController.swift */; };
+		A76D0F1A1FD1857E001BD348 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76D0F191FD1857E001BD348 /* LoginViewController.swift */; };
+		A76F44491FF2212200B5C336 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A76F44481FF2212100B5C336 /* Assets.xcassets */; };
+		A7B9CC831FE9274C00E87E4E /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A7B9CC771FE9274B00E87E4E /* Roboto-Medium.ttf */; };
+		A7B9CC841FE9274C00E87E4E /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A7B9CC781FE9274B00E87E4E /* Roboto-Light.ttf */; };
+		A7B9CC851FE9274C00E87E4E /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A7B9CC791FE9274B00E87E4E /* Roboto-Regular.ttf */; };
+		A7B9CC861FE9274C00E87E4E /* Roboto-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A7B9CC7A1FE9274B00E87E4E /* Roboto-MediumItalic.ttf */; };
+		A7B9CC871FE9274C00E87E4E /* Roboto-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A7B9CC7B1FE9274B00E87E4E /* Roboto-ThinItalic.ttf */; };
+		A7B9CC881FE9274C00E87E4E /* Roboto-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A7B9CC7C1FE9274B00E87E4E /* Roboto-BoldItalic.ttf */; };
+		A7B9CC891FE9274C00E87E4E /* Roboto-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A7B9CC7D1FE9274B00E87E4E /* Roboto-LightItalic.ttf */; };
+		A7B9CC8A1FE9274C00E87E4E /* Roboto-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A7B9CC7E1FE9274B00E87E4E /* Roboto-Italic.ttf */; };
+		A7B9CC8B1FE9274C00E87E4E /* Roboto-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A7B9CC7F1FE9274B00E87E4E /* Roboto-BlackItalic.ttf */; };
+		A7B9CC8C1FE9274C00E87E4E /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A7B9CC801FE9274B00E87E4E /* Roboto-Bold.ttf */; };
+		A7B9CC8D1FE9274C00E87E4E /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A7B9CC811FE9274C00E87E4E /* Roboto-Thin.ttf */; };
+		A7B9CC8E1FE9274C00E87E4E /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A7B9CC821FE9274C00E87E4E /* Roboto-Black.ttf */; };
+		A7F34C521FFB6F250029577C /* LocationCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F34C501FFB6F250029577C /* LocationCollectionViewCell.swift */; };
+		A7F34C531FFB6F250029577C /* LocationCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7F34C511FFB6F250029577C /* LocationCollectionViewCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A76D0E821FD145C1001BD348 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A76D0E621FD145C0001BD348 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A76D0E691FD145C0001BD348;
+			remoteInfo = OrbDriver;
+		};
+		A76D0E8D1FD145C1001BD348 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A76D0E621FD145C0001BD348 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A76D0E691FD145C0001BD348;
+			remoteInfo = OrbDriver;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A70340141FDE95E700FC447C /* CurvedButtonUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurvedButtonUtility.swift; sourceTree = "<group>"; };
+		A706C5891FD2919A00D7C0F8 /* ServiceLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceLayer.swift; sourceTree = "<group>"; };
+		A706C58C1FD291E100D7C0F8 /* HttpRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpRequest.swift; sourceTree = "<group>"; };
+		A706C58E1FD2920900D7C0F8 /* UserBO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserBO.swift; sourceTree = "<group>"; };
+		A70F52021FF38B9200015510 /* OfflineCustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfflineCustomView.swift; sourceTree = "<group>"; };
+		A70F52041FF38B9D00015510 /* OfflineCustomView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OfflineCustomView.xib; sourceTree = "<group>"; };
+		A70F52081FF3CAA100015510 /* TaksyKraft+GIF.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TaksyKraft+GIF.swift"; sourceTree = "<group>"; };
+		A72796691FEA33520052D291 /* DashBoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashBoardViewController.swift; sourceTree = "<group>"; };
+		A727966B1FEA35390052D291 /* OTPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPViewController.swift; sourceTree = "<group>"; };
+		A727966D1FEA35480052D291 /* FeaturesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturesViewController.swift; sourceTree = "<group>"; };
+		A727966F1FEA35640052D291 /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
+		A72796721FEA4A210052D291 /* NotificationsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsTableViewCell.swift; sourceTree = "<group>"; };
+		A72796741FEA4AAE0052D291 /* NotificationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsViewController.swift; sourceTree = "<group>"; };
+		A72796761FEA569A0052D291 /* FriendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsViewController.swift; sourceTree = "<group>"; };
+		A72796781FEA5BE30052D291 /* FriendsDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsDetailViewController.swift; sourceTree = "<group>"; };
+		A727967A1FEA765B0052D291 /* AddFriendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFriendViewController.swift; sourceTree = "<group>"; };
+		A727967C1FEA82960052D291 /* CabDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CabDetailsViewController.swift; sourceTree = "<group>"; };
+		A7608F051FF65FD400621025 /* ProfileBO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileBO.swift; sourceTree = "<group>"; };
+		A7608F071FF663AD00621025 /* DriverActivityBO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverActivityBO.swift; sourceTree = "<group>"; };
+		A76D0E6A1FD145C0001BD348 /* OrbDriver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OrbDriver.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A76D0E721FD145C0001BD348 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A76D0E751FD145C0001BD348 /* OrbDriver.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = OrbDriver.xcdatamodel; sourceTree = "<group>"; };
+		A76D0E7A1FD145C0001BD348 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A76D0E7C1FD145C0001BD348 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A76D0E811FD145C1001BD348 /* OrbDriverTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OrbDriverTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A76D0E851FD145C1001BD348 /* OrbDriverTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrbDriverTests.swift; sourceTree = "<group>"; };
+		A76D0E871FD145C1001BD348 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A76D0E8C1FD145C1001BD348 /* OrbDriverUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OrbDriverUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A76D0E901FD145C1001BD348 /* OrbDriverUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrbDriverUITests.swift; sourceTree = "<group>"; };
+		A76D0E921FD145C1001BD348 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A76D0EA61FD1652C001BD348 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		A76D0EA81FD1652C001BD348 /* FRHyperLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRHyperLabel.m; sourceTree = "<group>"; };
+		A76D0EA91FD1652C001BD348 /* FloatLabelTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloatLabelTextView.swift; sourceTree = "<group>"; };
+		A76D0EAA1FD1652C001BD348 /* FloatLabelTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloatLabelTextField.swift; sourceTree = "<group>"; };
+		A76D0EAB1FD1652C001BD348 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		A76D0ECB1FD1652C001BD348 /* IQTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQTextView.swift; sourceTree = "<group>"; };
+		A76D0ECD1FD1652C001BD348 /* IQPreviousNextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQPreviousNextView.swift; sourceTree = "<group>"; };
+		A76D0ECE1FD1652C001BD348 /* IQTitleBarButtonItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQTitleBarButtonItem.swift; sourceTree = "<group>"; };
+		A76D0ECF1FD1652C001BD348 /* IQBarButtonItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQBarButtonItem.swift; sourceTree = "<group>"; };
+		A76D0ED01FD1652C001BD348 /* IQToolbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQToolbar.swift; sourceTree = "<group>"; };
+		A76D0ED11FD1652C001BD348 /* IQUIView+IQKeyboardToolbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQUIView+IQKeyboardToolbar.swift"; sourceTree = "<group>"; };
+		A76D0ED31FD1652C001BD348 /* IQKeyboardManagerConstantsInternal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQKeyboardManagerConstantsInternal.swift; sourceTree = "<group>"; };
+		A76D0ED41FD1652C001BD348 /* IQKeyboardManagerConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQKeyboardManagerConstants.swift; sourceTree = "<group>"; };
+		A76D0ED61FD1652C001BD348 /* IQKeyboardManager.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = IQKeyboardManager.bundle; sourceTree = "<group>"; };
+		A76D0ED71FD1652C001BD348 /* IQKeyboardReturnKeyHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQKeyboardReturnKeyHandler.swift; sourceTree = "<group>"; };
+		A76D0ED81FD1652C001BD348 /* IQKeyboardManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQKeyboardManager.swift; sourceTree = "<group>"; };
+		A76D0ED91FD1652C001BD348 /* IQKeyboardManagerSwift.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQKeyboardManagerSwift.h; sourceTree = "<group>"; };
+		A76D0EDB1FD1652C001BD348 /* IQUIWindow+Hierarchy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQUIWindow+Hierarchy.swift"; sourceTree = "<group>"; };
+		A76D0EDC1FD1652C001BD348 /* IQUIScrollView+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQUIScrollView+Additions.swift"; sourceTree = "<group>"; };
+		A76D0EDD1FD1652C001BD348 /* IQUIViewController+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQUIViewController+Additions.swift"; sourceTree = "<group>"; };
+		A76D0EDE1FD1652C001BD348 /* IQUITextFieldView+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQUITextFieldView+Additions.swift"; sourceTree = "<group>"; };
+		A76D0EDF1FD1652C001BD348 /* IQUIView+Hierarchy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQUIView+Hierarchy.swift"; sourceTree = "<group>"; };
+		A76D0EE01FD1652C001BD348 /* IQNSArray+Sort.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQNSArray+Sort.swift"; sourceTree = "<group>"; };
+		A76D0EE11FD1652C001BD348 /* FRHyperLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRHyperLabel.h; sourceTree = "<group>"; };
+		A76D0EE31FD1652C001BD348 /* OrbUserDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrbUserDefaults.swift; sourceTree = "<group>"; };
+		A76D0EE41FD1652C001BD348 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A76D0F171FD182FB001BD348 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		A76D0F191FD1857E001BD348 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		A76F44481FF2212100B5C336 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A7B9CC771FE9274B00E87E4E /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		A7B9CC781FE9274B00E87E4E /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Light.ttf"; sourceTree = "<group>"; };
+		A7B9CC791FE9274B00E87E4E /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		A7B9CC7A1FE9274B00E87E4E /* Roboto-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-MediumItalic.ttf"; sourceTree = "<group>"; };
+		A7B9CC7B1FE9274B00E87E4E /* Roboto-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-ThinItalic.ttf"; sourceTree = "<group>"; };
+		A7B9CC7C1FE9274B00E87E4E /* Roboto-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BoldItalic.ttf"; sourceTree = "<group>"; };
+		A7B9CC7D1FE9274B00E87E4E /* Roboto-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-LightItalic.ttf"; sourceTree = "<group>"; };
+		A7B9CC7E1FE9274B00E87E4E /* Roboto-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Italic.ttf"; sourceTree = "<group>"; };
+		A7B9CC7F1FE9274B00E87E4E /* Roboto-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BlackItalic.ttf"; sourceTree = "<group>"; };
+		A7B9CC801FE9274B00E87E4E /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		A7B9CC811FE9274C00E87E4E /* Roboto-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Thin.ttf"; sourceTree = "<group>"; };
+		A7B9CC821FE9274C00E87E4E /* Roboto-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Black.ttf"; sourceTree = "<group>"; };
+		A7F34C501FFB6F250029577C /* LocationCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationCollectionViewCell.swift; sourceTree = "<group>"; };
+		A7F34C511FFB6F250029577C /* LocationCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LocationCollectionViewCell.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A76D0E671FD145C0001BD348 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A76D0E7E1FD145C1001BD348 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A76D0E891FD145C1001BD348 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A706C5871FD2919000D7C0F8 /* ServiceLayer */ = {
+			isa = PBXGroup;
+			children = (
+				A706C5891FD2919A00D7C0F8 /* ServiceLayer.swift */,
+				A706C5881FD2919000D7C0F8 /* Models */,
+			);
+			path = ServiceLayer;
+			sourceTree = "<group>";
+		};
+		A706C5881FD2919000D7C0F8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A706C58E1FD2920900D7C0F8 /* UserBO.swift */,
+				A7608F051FF65FD400621025 /* ProfileBO.swift */,
+				A7608F071FF663AD00621025 /* DriverActivityBO.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A706C58B1FD291E100D7C0F8 /* ServiceCallHelpers */ = {
+			isa = PBXGroup;
+			children = (
+				A706C58C1FD291E100D7C0F8 /* HttpRequest.swift */,
+			);
+			path = ServiceCallHelpers;
+			sourceTree = "<group>";
+		};
+		A70F52011FF38B7200015510 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				A70F52021FF38B9200015510 /* OfflineCustomView.swift */,
+				A70F52041FF38B9D00015510 /* OfflineCustomView.xib */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		A72796711FEA4A0B0052D291 /* CustomCells */ = {
+			isa = PBXGroup;
+			children = (
+				A72796721FEA4A210052D291 /* NotificationsTableViewCell.swift */,
+				A7F34C501FFB6F250029577C /* LocationCollectionViewCell.swift */,
+				A7F34C511FFB6F250029577C /* LocationCollectionViewCell.xib */,
+			);
+			path = CustomCells;
+			sourceTree = "<group>";
+		};
+		A76D0E611FD145C0001BD348 = {
+			isa = PBXGroup;
+			children = (
+				A76D0E6C1FD145C0001BD348 /* OrbDriver */,
+				A76D0E841FD145C1001BD348 /* OrbDriverTests */,
+				A76D0E8F1FD145C1001BD348 /* OrbDriverUITests */,
+				A76D0E6B1FD145C0001BD348 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A76D0E6B1FD145C0001BD348 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A76D0E6A1FD145C0001BD348 /* OrbDriver.app */,
+				A76D0E811FD145C1001BD348 /* OrbDriverTests.xctest */,
+				A76D0E8C1FD145C1001BD348 /* OrbDriverUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A76D0E6C1FD145C0001BD348 /* OrbDriver */ = {
+			isa = PBXGroup;
+			children = (
+				A76F44481FF2212100B5C336 /* Assets.xcassets */,
+				A706C5871FD2919000D7C0F8 /* ServiceLayer */,
+				A76D0EE21FD1652C001BD348 /* ApplicationLayer */,
+				A76D0EA41FD1652C001BD348 /* PresentationLayer */,
+				A76D0EA71FD1652C001BD348 /* Utilities */,
+				A76D0E711FD145C0001BD348 /* Main.storyboard */,
+				A76D0E791FD145C0001BD348 /* LaunchScreen.storyboard */,
+				A76D0E7C1FD145C0001BD348 /* Info.plist */,
+				A76D0E741FD145C0001BD348 /* OrbDriver.xcdatamodeld */,
+			);
+			path = OrbDriver;
+			sourceTree = "<group>";
+		};
+		A76D0E841FD145C1001BD348 /* OrbDriverTests */ = {
+			isa = PBXGroup;
+			children = (
+				A76D0E851FD145C1001BD348 /* OrbDriverTests.swift */,
+				A76D0E871FD145C1001BD348 /* Info.plist */,
+			);
+			path = OrbDriverTests;
+			sourceTree = "<group>";
+		};
+		A76D0E8F1FD145C1001BD348 /* OrbDriverUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A76D0E901FD145C1001BD348 /* OrbDriverUITests.swift */,
+				A76D0E921FD145C1001BD348 /* Info.plist */,
+			);
+			path = OrbDriverUITests;
+			sourceTree = "<group>";
+		};
+		A76D0EA41FD1652C001BD348 /* PresentationLayer */ = {
+			isa = PBXGroup;
+			children = (
+				A70F52011FF38B7200015510 /* CustomViews */,
+				A72796711FEA4A0B0052D291 /* CustomCells */,
+				A76D0EA51FD1652C001BD348 /* ViewControllers */,
+			);
+			path = PresentationLayer;
+			sourceTree = "<group>";
+		};
+		A76D0EA51FD1652C001BD348 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A76D0EA61FD1652C001BD348 /* BaseViewController.swift */,
+				A76D0F191FD1857E001BD348 /* LoginViewController.swift */,
+				A76D0F171FD182FB001BD348 /* ProfileViewController.swift */,
+				A72796691FEA33520052D291 /* DashBoardViewController.swift */,
+				A727966B1FEA35390052D291 /* OTPViewController.swift */,
+				A727966D1FEA35480052D291 /* FeaturesViewController.swift */,
+				A727966F1FEA35640052D291 /* LocationViewController.swift */,
+				A72796741FEA4AAE0052D291 /* NotificationsViewController.swift */,
+				A72796761FEA569A0052D291 /* FriendsViewController.swift */,
+				A72796781FEA5BE30052D291 /* FriendsDetailViewController.swift */,
+				A727967A1FEA765B0052D291 /* AddFriendViewController.swift */,
+				A727967C1FEA82960052D291 /* CabDetailsViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		A76D0EA71FD1652C001BD348 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				A70F52081FF3CAA100015510 /* TaksyKraft+GIF.swift */,
+				A7B9CC761FE9274B00E87E4E /* Fonts */,
+				A706C58B1FD291E100D7C0F8 /* ServiceCallHelpers */,
+				A76D0EE11FD1652C001BD348 /* FRHyperLabel.h */,
+				A76D0EA81FD1652C001BD348 /* FRHyperLabel.m */,
+				A76D0EA91FD1652C001BD348 /* FloatLabelTextView.swift */,
+				A76D0EAA1FD1652C001BD348 /* FloatLabelTextField.swift */,
+				A76D0EAB1FD1652C001BD348 /* Reachability.swift */,
+				A76D0EC91FD1652C001BD348 /* IQKeyboardManagerSwift */,
+				A70340141FDE95E700FC447C /* CurvedButtonUtility.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		A76D0EC91FD1652C001BD348 /* IQKeyboardManagerSwift */ = {
+			isa = PBXGroup;
+			children = (
+				A76D0ECA1FD1652C001BD348 /* IQTextView */,
+				A76D0ECC1FD1652C001BD348 /* IQToolbar */,
+				A76D0ED21FD1652C001BD348 /* Constants */,
+				A76D0ED51FD1652C001BD348 /* Resources */,
+				A76D0ED71FD1652C001BD348 /* IQKeyboardReturnKeyHandler.swift */,
+				A76D0ED81FD1652C001BD348 /* IQKeyboardManager.swift */,
+				A76D0ED91FD1652C001BD348 /* IQKeyboardManagerSwift.h */,
+				A76D0EDA1FD1652C001BD348 /* Categories */,
+			);
+			path = IQKeyboardManagerSwift;
+			sourceTree = "<group>";
+		};
+		A76D0ECA1FD1652C001BD348 /* IQTextView */ = {
+			isa = PBXGroup;
+			children = (
+				A76D0ECB1FD1652C001BD348 /* IQTextView.swift */,
+			);
+			path = IQTextView;
+			sourceTree = "<group>";
+		};
+		A76D0ECC1FD1652C001BD348 /* IQToolbar */ = {
+			isa = PBXGroup;
+			children = (
+				A76D0ECD1FD1652C001BD348 /* IQPreviousNextView.swift */,
+				A76D0ECE1FD1652C001BD348 /* IQTitleBarButtonItem.swift */,
+				A76D0ECF1FD1652C001BD348 /* IQBarButtonItem.swift */,
+				A76D0ED01FD1652C001BD348 /* IQToolbar.swift */,
+				A76D0ED11FD1652C001BD348 /* IQUIView+IQKeyboardToolbar.swift */,
+			);
+			path = IQToolbar;
+			sourceTree = "<group>";
+		};
+		A76D0ED21FD1652C001BD348 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				A76D0ED31FD1652C001BD348 /* IQKeyboardManagerConstantsInternal.swift */,
+				A76D0ED41FD1652C001BD348 /* IQKeyboardManagerConstants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		A76D0ED51FD1652C001BD348 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A76D0ED61FD1652C001BD348 /* IQKeyboardManager.bundle */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A76D0EDA1FD1652C001BD348 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				A76D0EDB1FD1652C001BD348 /* IQUIWindow+Hierarchy.swift */,
+				A76D0EDC1FD1652C001BD348 /* IQUIScrollView+Additions.swift */,
+				A76D0EDD1FD1652C001BD348 /* IQUIViewController+Additions.swift */,
+				A76D0EDE1FD1652C001BD348 /* IQUITextFieldView+Additions.swift */,
+				A76D0EDF1FD1652C001BD348 /* IQUIView+Hierarchy.swift */,
+				A76D0EE01FD1652C001BD348 /* IQNSArray+Sort.swift */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		A76D0EE21FD1652C001BD348 /* ApplicationLayer */ = {
+			isa = PBXGroup;
+			children = (
+				A76D0EE31FD1652C001BD348 /* OrbUserDefaults.swift */,
+				A76D0EE41FD1652C001BD348 /* AppDelegate.swift */,
+			);
+			path = ApplicationLayer;
+			sourceTree = "<group>";
+		};
+		A7B9CC761FE9274B00E87E4E /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				A7B9CC771FE9274B00E87E4E /* Roboto-Medium.ttf */,
+				A7B9CC781FE9274B00E87E4E /* Roboto-Light.ttf */,
+				A7B9CC791FE9274B00E87E4E /* Roboto-Regular.ttf */,
+				A7B9CC7A1FE9274B00E87E4E /* Roboto-MediumItalic.ttf */,
+				A7B9CC7B1FE9274B00E87E4E /* Roboto-ThinItalic.ttf */,
+				A7B9CC7C1FE9274B00E87E4E /* Roboto-BoldItalic.ttf */,
+				A7B9CC7D1FE9274B00E87E4E /* Roboto-LightItalic.ttf */,
+				A7B9CC7E1FE9274B00E87E4E /* Roboto-Italic.ttf */,
+				A7B9CC7F1FE9274B00E87E4E /* Roboto-BlackItalic.ttf */,
+				A7B9CC801FE9274B00E87E4E /* Roboto-Bold.ttf */,
+				A7B9CC811FE9274C00E87E4E /* Roboto-Thin.ttf */,
+				A7B9CC821FE9274C00E87E4E /* Roboto-Black.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A76D0E691FD145C0001BD348 /* OrbDriver */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A76D0E951FD145C1001BD348 /* Build configuration list for PBXNativeTarget "OrbDriver" */;
+			buildPhases = (
+				A76D0E661FD145C0001BD348 /* Sources */,
+				A76D0E671FD145C0001BD348 /* Frameworks */,
+				A76D0E681FD145C0001BD348 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OrbDriver;
+			productName = OrbDriver;
+			productReference = A76D0E6A1FD145C0001BD348 /* OrbDriver.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A76D0E801FD145C1001BD348 /* OrbDriverTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A76D0E981FD145C1001BD348 /* Build configuration list for PBXNativeTarget "OrbDriverTests" */;
+			buildPhases = (
+				A76D0E7D1FD145C1001BD348 /* Sources */,
+				A76D0E7E1FD145C1001BD348 /* Frameworks */,
+				A76D0E7F1FD145C1001BD348 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A76D0E831FD145C1001BD348 /* PBXTargetDependency */,
+			);
+			name = OrbDriverTests;
+			productName = OrbDriverTests;
+			productReference = A76D0E811FD145C1001BD348 /* OrbDriverTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A76D0E8B1FD145C1001BD348 /* OrbDriverUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A76D0E9B1FD145C1001BD348 /* Build configuration list for PBXNativeTarget "OrbDriverUITests" */;
+			buildPhases = (
+				A76D0E881FD145C1001BD348 /* Sources */,
+				A76D0E891FD145C1001BD348 /* Frameworks */,
+				A76D0E8A1FD145C1001BD348 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A76D0E8E1FD145C1001BD348 /* PBXTargetDependency */,
+			);
+			name = OrbDriverUITests;
+			productName = OrbDriverUITests;
+			productReference = A76D0E8C1FD145C1001BD348 /* OrbDriverUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A76D0E621FD145C0001BD348 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0910;
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = Nikhilesh;
+				TargetAttributes = {
+					A76D0E691FD145C0001BD348 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Manual;
+					};
+					A76D0E801FD145C1001BD348 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A76D0E691FD145C0001BD348;
+					};
+					A76D0E8B1FD145C1001BD348 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A76D0E691FD145C0001BD348;
+					};
+				};
+			};
+			buildConfigurationList = A76D0E651FD145C0001BD348 /* Build configuration list for PBXProject "OrbDriver" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A76D0E611FD145C0001BD348;
+			productRefGroup = A76D0E6B1FD145C0001BD348 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A76D0E691FD145C0001BD348 /* OrbDriver */,
+				A76D0E801FD145C1001BD348 /* OrbDriverTests */,
+				A76D0E8B1FD145C1001BD348 /* OrbDriverUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A76D0E681FD145C0001BD348 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7B9CC8C1FE9274C00E87E4E /* Roboto-Bold.ttf in Resources */,
+				A7B9CC831FE9274C00E87E4E /* Roboto-Medium.ttf in Resources */,
+				A7B9CC8A1FE9274C00E87E4E /* Roboto-Italic.ttf in Resources */,
+				A7B9CC891FE9274C00E87E4E /* Roboto-LightItalic.ttf in Resources */,
+				A7B9CC851FE9274C00E87E4E /* Roboto-Regular.ttf in Resources */,
+				A70F52051FF38B9E00015510 /* OfflineCustomView.xib in Resources */,
+				A76D0F0C1FD1652C001BD348 /* IQKeyboardManager.bundle in Resources */,
+				A7B9CC841FE9274C00E87E4E /* Roboto-Light.ttf in Resources */,
+				A7B9CC8B1FE9274C00E87E4E /* Roboto-BlackItalic.ttf in Resources */,
+				A7B9CC8D1FE9274C00E87E4E /* Roboto-Thin.ttf in Resources */,
+				A7F34C531FFB6F250029577C /* LocationCollectionViewCell.xib in Resources */,
+				A7B9CC861FE9274C00E87E4E /* Roboto-MediumItalic.ttf in Resources */,
+				A76D0E7B1FD145C0001BD348 /* LaunchScreen.storyboard in Resources */,
+				A7B9CC8E1FE9274C00E87E4E /* Roboto-Black.ttf in Resources */,
+				A7B9CC871FE9274C00E87E4E /* Roboto-ThinItalic.ttf in Resources */,
+				A7B9CC881FE9274C00E87E4E /* Roboto-BoldItalic.ttf in Resources */,
+				A76F44491FF2212200B5C336 /* Assets.xcassets in Resources */,
+				A76D0E731FD145C0001BD348 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A76D0E7F1FD145C1001BD348 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A76D0E8A1FD145C1001BD348 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A76D0E661FD145C0001BD348 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A727966A1FEA33520052D291 /* DashBoardViewController.swift in Sources */,
+				A76D0F141FD1652C001BD348 /* IQNSArray+Sort.swift in Sources */,
+				A7F34C521FFB6F250029577C /* LocationCollectionViewCell.swift in Sources */,
+				A76D0F121FD1652C001BD348 /* IQUITextFieldView+Additions.swift in Sources */,
+				A76D0F041FD1652C001BD348 /* IQTextView.swift in Sources */,
+				A727967D1FEA82960052D291 /* CabDetailsViewController.swift in Sources */,
+				A727966C1FEA35390052D291 /* OTPViewController.swift in Sources */,
+				A7608F061FF65FD400621025 /* ProfileBO.swift in Sources */,
+				A70F52031FF38B9200015510 /* OfflineCustomView.swift in Sources */,
+				A76D0EE51FD1652C001BD348 /* BaseViewController.swift in Sources */,
+				A76D0F151FD1652C001BD348 /* OrbUserDefaults.swift in Sources */,
+				A72796731FEA4A210052D291 /* NotificationsTableViewCell.swift in Sources */,
+				A7608F081FF663AD00621025 /* DriverActivityBO.swift in Sources */,
+				A706C58D1FD291E100D7C0F8 /* HttpRequest.swift in Sources */,
+				A76D0F161FD1652C001BD348 /* AppDelegate.swift in Sources */,
+				A76D0EE71FD1652C001BD348 /* FloatLabelTextView.swift in Sources */,
+				A76D0F071FD1652C001BD348 /* IQBarButtonItem.swift in Sources */,
+				A727967B1FEA765B0052D291 /* AddFriendViewController.swift in Sources */,
+				A76D0F101FD1652C001BD348 /* IQUIScrollView+Additions.swift in Sources */,
+				A76D0EE91FD1652C001BD348 /* Reachability.swift in Sources */,
+				A76D0F111FD1652C001BD348 /* IQUIViewController+Additions.swift in Sources */,
+				A76D0F0A1FD1652C001BD348 /* IQKeyboardManagerConstantsInternal.swift in Sources */,
+				A76D0EE61FD1652C001BD348 /* FRHyperLabel.m in Sources */,
+				A76D0F091FD1652C001BD348 /* IQUIView+IQKeyboardToolbar.swift in Sources */,
+				A76D0F051FD1652C001BD348 /* IQPreviousNextView.swift in Sources */,
+				A727966E1FEA35480052D291 /* FeaturesViewController.swift in Sources */,
+				A76D0F0E1FD1652C001BD348 /* IQKeyboardManager.swift in Sources */,
+				A72796771FEA569A0052D291 /* FriendsViewController.swift in Sources */,
+				A706C58A1FD2919A00D7C0F8 /* ServiceLayer.swift in Sources */,
+				A72796701FEA35640052D291 /* LocationViewController.swift in Sources */,
+				A76D0F131FD1652C001BD348 /* IQUIView+Hierarchy.swift in Sources */,
+				A76D0F0F1FD1652C001BD348 /* IQUIWindow+Hierarchy.swift in Sources */,
+				A76D0F0D1FD1652C001BD348 /* IQKeyboardReturnKeyHandler.swift in Sources */,
+				A76D0F0B1FD1652C001BD348 /* IQKeyboardManagerConstants.swift in Sources */,
+				A72796751FEA4AAE0052D291 /* NotificationsViewController.swift in Sources */,
+				A76D0EE81FD1652C001BD348 /* FloatLabelTextField.swift in Sources */,
+				A706C58F1FD2920900D7C0F8 /* UserBO.swift in Sources */,
+				A72796791FEA5BE30052D291 /* FriendsDetailViewController.swift in Sources */,
+				A76D0F061FD1652C001BD348 /* IQTitleBarButtonItem.swift in Sources */,
+				A70340151FDE95E700FC447C /* CurvedButtonUtility.swift in Sources */,
+				A76D0F181FD182FB001BD348 /* ProfileViewController.swift in Sources */,
+				A70F52091FF3CAA100015510 /* TaksyKraft+GIF.swift in Sources */,
+				A76D0E761FD145C0001BD348 /* OrbDriver.xcdatamodeld in Sources */,
+				A76D0F1A1FD1857E001BD348 /* LoginViewController.swift in Sources */,
+				A76D0F081FD1652C001BD348 /* IQToolbar.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A76D0E7D1FD145C1001BD348 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A76D0E861FD145C1001BD348 /* OrbDriverTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A76D0E881FD145C1001BD348 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A76D0E911FD145C1001BD348 /* OrbDriverUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A76D0E831FD145C1001BD348 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A76D0E691FD145C0001BD348 /* OrbDriver */;
+			targetProxy = A76D0E821FD145C1001BD348 /* PBXContainerItemProxy */;
+		};
+		A76D0E8E1FD145C1001BD348 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A76D0E691FD145C0001BD348 /* OrbDriver */;
+			targetProxy = A76D0E8D1FD145C1001BD348 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A76D0E711FD145C0001BD348 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A76D0E721FD145C0001BD348 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A76D0E791FD145C0001BD348 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A76D0E7A1FD145C0001BD348 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A76D0E931FD145C1001BD348 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A76D0E941FD145C1001BD348 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A76D0E961FD145C1001BD348 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 767WDHBUJ6;
+				INFOPLIST_FILE = OrbDriver/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.taksykraft.drivers;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "2b82a9b3-ed2c-41ae-97dd-393527190aa3";
+				PROVISIONING_PROFILE_SPECIFIER = OrbDrivers_Dev;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		A76D0E971FD145C1001BD348 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 767WDHBUJ6;
+				INFOPLIST_FILE = OrbDriver/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.taksykraft.drivers;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "2b82a9b3-ed2c-41ae-97dd-393527190aa3";
+				PROVISIONING_PROFILE_SPECIFIER = OrbDrivers_Dev;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		A76D0E991FD145C1001BD348 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 767WDHBUJ6;
+				INFOPLIST_FILE = OrbDriverTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.taksykraft.OrbDriverTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OrbDriver.app/OrbDriver";
+			};
+			name = Debug;
+		};
+		A76D0E9A1FD145C1001BD348 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 767WDHBUJ6;
+				INFOPLIST_FILE = OrbDriverTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.taksykraft.OrbDriverTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OrbDriver.app/OrbDriver";
+			};
+			name = Release;
+		};
+		A76D0E9C1FD145C1001BD348 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 767WDHBUJ6;
+				INFOPLIST_FILE = OrbDriverUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.taksykraft.OrbDriverUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = OrbDriver;
+			};
+			name = Debug;
+		};
+		A76D0E9D1FD145C1001BD348 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 767WDHBUJ6;
+				INFOPLIST_FILE = OrbDriverUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.taksykraft.OrbDriverUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = OrbDriver;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A76D0E651FD145C0001BD348 /* Build configuration list for PBXProject "OrbDriver" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A76D0E931FD145C1001BD348 /* Debug */,
+				A76D0E941FD145C1001BD348 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A76D0E951FD145C1001BD348 /* Build configuration list for PBXNativeTarget "OrbDriver" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A76D0E961FD145C1001BD348 /* Debug */,
+				A76D0E971FD145C1001BD348 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A76D0E981FD145C1001BD348 /* Build configuration list for PBXNativeTarget "OrbDriverTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A76D0E991FD145C1001BD348 /* Debug */,
+				A76D0E9A1FD145C1001BD348 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A76D0E9B1FD145C1001BD348 /* Build configuration list for PBXNativeTarget "OrbDriverUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A76D0E9C1FD145C1001BD348 /* Debug */,
+				A76D0E9D1FD145C1001BD348 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A76D0E741FD145C0001BD348 /* OrbDriver.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A76D0E751FD145C0001BD348 /* OrbDriver.xcdatamodel */,
+			);
+			currentVersion = A76D0E751FD145C0001BD348 /* OrbDriver.xcdatamodel */;
+			path = OrbDriver.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = A76D0E621FD145C0001BD348 /* Project object */;
+}

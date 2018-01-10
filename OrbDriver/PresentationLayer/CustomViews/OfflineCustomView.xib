@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Light.ttf">
+            <string>Roboto-Light</string>
+        </array>
+        <array key="Roboto-Medium.ttf">
+            <string>Roboto-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="ebN-la-X0U" customClass="OfflineCustomView" customModule="OrbDriver" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8aa-FT-Bf3">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="yCU-6W-LKt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Offline_Logo" translatesAutoresizingMaskIntoConstraints="NO" id="GUx-gh-oX8">
+                                <rect key="frame" x="83.5" y="127.5" width="208" height="96"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="208" id="7Fa-Ap-WJk"/>
+                                    <constraint firstAttribute="height" constant="96" id="urX-kD-TSV"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C34-hj-1SZ">
+                                <rect key="frame" x="37" y="298.5" width="300" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="Z8d-Jz-3wL"/>
+                                    <constraint firstAttribute="width" constant="300" id="p7U-ZL-3bl"/>
+                                </constraints>
+                                <string key="text">Whoa! You're offline.
+Go Online to access the Orb tablet</string>
+                                <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="23"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="coP-Fe-cbo">
+                                <rect key="frame" x="25" y="478.5" width="325" height="50"/>
+                                <color key="backgroundColor" red="0.33725490200000002" green="0.72549019609999998" blue="0.81568627449999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Uj6-RU-Mbf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="24"/>
+                                <state key="normal" title="GO Online" backgroundImage="Button_BG">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="C34-hj-1SZ" firstAttribute="centerY" secondItem="yCU-6W-LKt" secondAttribute="centerY" constant="10" id="4md-iQ-f8l"/>
+                            <constraint firstItem="C34-hj-1SZ" firstAttribute="top" secondItem="GUx-gh-oX8" secondAttribute="bottom" constant="75" id="6sE-p6-jQf"/>
+                            <constraint firstItem="coP-Fe-cbo" firstAttribute="top" secondItem="C34-hj-1SZ" secondAttribute="bottom" constant="90" id="ORc-wi-ouc"/>
+                            <constraint firstItem="GUx-gh-oX8" firstAttribute="centerX" secondItem="yCU-6W-LKt" secondAttribute="centerX" id="PYT-sN-MDz"/>
+                            <constraint firstItem="coP-Fe-cbo" firstAttribute="leading" secondItem="yCU-6W-LKt" secondAttribute="leading" constant="25" id="XKl-dN-Nhu"/>
+                            <constraint firstItem="C34-hj-1SZ" firstAttribute="centerX" secondItem="yCU-6W-LKt" secondAttribute="centerX" id="enf-UI-45q"/>
+                            <constraint firstAttribute="trailing" secondItem="coP-Fe-cbo" secondAttribute="trailing" constant="25" id="hYo-QQ-YaP"/>
+                        </constraints>
+                    </view>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <blurEffect style="extraLight"/>
+                </visualEffectView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="8aa-FT-Bf3" firstAttribute="trailing" secondItem="zFS-CB-UaV" secondAttribute="trailing" id="5Ik-Y8-m8Q"/>
+                <constraint firstItem="8aa-FT-Bf3" firstAttribute="leading" secondItem="zFS-CB-UaV" secondAttribute="leading" id="FcJ-tg-YQm"/>
+                <constraint firstItem="8aa-FT-Bf3" firstAttribute="top" secondItem="ebN-la-X0U" secondAttribute="top" id="U6l-RH-DvQ"/>
+                <constraint firstItem="8aa-FT-Bf3" firstAttribute="bottom" secondItem="zFS-CB-UaV" secondAttribute="bottom" id="jzW-9Y-CTn"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="zFS-CB-UaV"/>
+            <connections>
+                <outlet property="btnOffline" destination="coP-Fe-cbo" id="lR1-Jc-Fjw"/>
+            </connections>
+            <point key="canvasLocation" x="-19.5" y="29.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Button_BG" width="233" height="29"/>
+        <image name="Offline_Logo" width="208" height="95"/>
+    </resources>
+</document>
