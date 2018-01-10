@@ -29,6 +29,8 @@
 	<string>Fetch common friends</string>
 	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
 	<string>To get nearby friends and display them</string>
+	<key>ITSAppUsesNonExemptEncryption</key>
+	<false/>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>To get nearby friends and display them</string>
 	<key>UIAppFonts</key>
