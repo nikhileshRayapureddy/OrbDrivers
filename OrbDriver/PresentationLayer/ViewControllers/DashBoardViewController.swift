@@ -47,16 +47,6 @@ class DashBoardViewController: BaseViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         print("Trip Status : \(OrbUserDefaults.getTripStatus())")
-        if OrbUserDefaults.getVideoMode()
-        {
-            self.btnVideo.isSelected = true
-            self.btnRadio.isSelected = false
-        }
-        else
-        {
-            self.btnVideo.isSelected = false
-            self.btnRadio.isSelected = true
-        }
         if OrbUserDefaults.getMuteStatus()
         {
             self.btnMute.isSelected = true
@@ -166,6 +156,20 @@ class DashBoardViewController: BaseViewController {
         btnPrev.layer.masksToBounds = true
         
         vwTripStatus.bringSubview(toFront: vwBase)
+        
+        if OrbUserDefaults.getVideoMode()
+        {
+            self.btnVideo.isSelected = true
+            self.btnRadio.isSelected = false
+            btnReplay.isEnabled = true
+        }
+        else
+        {
+            self.btnVideo.isSelected = false
+            self.btnRadio.isSelected = true
+            btnReplay.isEnabled = false
+        }
+
     }
     @IBAction func btnShuffleClicked(_ sender: UIButton) {
         self.postActionToServerWith(strAction: "shuffle")
@@ -179,10 +183,18 @@ class DashBoardViewController: BaseViewController {
         self.postActionToServerWith(strAction: "previous")
     }
     @IBAction func btnReplayClicked(_ sender: UIButton) {
-        self.postActionToServerWith(strAction: "replay")
+        self.postActionToServerWith(strAction: "reply")
     }
     @IBAction func btnMuteClicked(_ sender: UIButton) {
-        self.postActionToServerWith(strAction: "mute")
+        if sender.isSelected
+        {
+            self.postActionToServerWith(strAction: "unmute")
+        }
+        else
+        {
+            self.postActionToServerWith(strAction: "mute")
+        }
+        
     }
     @IBAction func btnResetClicked(_ sender: UIButton) {
         self.postActionToServerWith(strAction: "tripreset")
@@ -206,18 +218,26 @@ class DashBoardViewController: BaseViewController {
                     self.btnVideo.isSelected = true
                     self.btnRadio.isSelected = false
                     OrbUserDefaults.setVideoMode(object: true)
+                    btnReplay.isEnabled = true
                 }
                 else if strAction == "radio"
                 {
                     self.btnVideo.isSelected = false
                     self.btnRadio.isSelected = true
                     OrbUserDefaults.setVideoMode(object: false)
+                    btnReplay.isEnabled = false
+                }
+                else if strAction == "unmute"
+                {
+                    self.btnMute.isSelected = false
+                    OrbUserDefaults.setMuteStatus(object: self.btnMute.isSelected)
                 }
                 else if strAction == "mute"
                 {
-                    self.btnMute.isSelected = !self.btnMute.isSelected
+                    self.btnMute.isSelected = true
                     OrbUserDefaults.setMuteStatus(object: self.btnMute.isSelected)
                 }
+
             }
         }) { (err) in
             DispatchQueue.main.async {
