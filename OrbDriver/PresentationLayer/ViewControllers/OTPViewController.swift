@@ -38,7 +38,7 @@ class OTPViewController: UIViewController,UITextFieldDelegate {
         {
             guard let text = textField.text else { return true }
             
-            let newLength = text.characters.count + string.characters.count - range.length
+            let newLength = text.count + string.count - range.length
             if newLength <= 1
             {
                 if newLength == 0
@@ -197,6 +197,9 @@ class OTPViewController: UIViewController,UITextFieldDelegate {
                     
                 }
             }
+            
+            
+        
             
             return newLength <= 1 // Bool
         }        else{
